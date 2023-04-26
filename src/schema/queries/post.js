@@ -5,7 +5,7 @@ import { Post } from "../types/Post";
 export default {
     post: {
         type: Post,
-        description: 'Get details about a pecific post',
+        description: 'Get details about a specific post',
         args: {
             id: { type: new GraphQLNonNull(GraphQLInt) }
         },
