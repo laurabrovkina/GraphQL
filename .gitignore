@@ -1,2 +1,13 @@
 node_modules
 
+dist/FakeDatabse.js
+dist/index.js
+dist/schema/index.js
+dist/schema/mutations/addComment.js
+dist/schema/mutations/addPost.js
+dist/schema/queries/author.js
+dist/schema/queries/post.js
+dist/schema/queries/posts.js
+dist/schema/types/Author.js
+dist/schema/types/Comment.js
+dist/schema/types/Post.js
