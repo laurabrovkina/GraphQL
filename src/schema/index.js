@@ -16,10 +16,12 @@ const schema = new GraphQLSchema({
     }),
 
     mutation: new GraphQLObjectType({
-        name: "Rootmutation",
+        name: 'RootMutation',
         fields: () => ({
             ...addPost,
             ...addComment
         })
     })
-})
+});
+
+export default schema;
