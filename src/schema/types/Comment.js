@@ -1,4 +1,4 @@
-import { GraphQLInt, GraphQLObjectType, GraphQLString } from 'graphql';
+import { GraphQLInt, GraphQLObjectType, GraphQLString, GraphQLNonNull } from 'graphql';
 
 export const Comment = new GraphQLObjectType({
     name: "Comment",
@@ -8,4 +8,13 @@ export const Comment = new GraphQLObjectType({
         name: { type: GraphQLString },
         content: { type: GraphQLString }
     })
-})
+});
+
+export const CommentInputType = new GraphQLObjectType({
+    name: "CommentInput",
+    fields: {
+        name: { type: new GraphQLNonNull(GraphQLString) },
+        content: { type: new GraphQLNonNull(GraphQLString) },
+        postId: { type: new GraphQLNonNull(GraphQLInt) }
+    }
+});
